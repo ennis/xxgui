@@ -1,0 +1,42 @@
+[package]
+# cross-platform extensible gui (xxgui)
+name = "xxgui"
+version = "0.1.0"
+authors = ["Alexandre Bléron <alex.bleron@gmail.com>"]
+
+[dev-dependencies]
+pretty_env_logger = "*"
+gl = "*"
+
+[build-dependencies]
+embed-resource = "*"
+
+[dependencies]
+bitflags = "*"
+lazy_static = "*"
+smallvec = "*"
+libc = "*"
+log = "*"
+winit = "*"
+glutin = "*"
+failure = "*"
+petgraph="*"
+rand="*"
+indexmap="*"
+time="*"
+num="*"
+cssparser="*"
+warmy="*"
+winapi="*"
+user32-sys="*"
+kernel32-sys="*"
+rusttype="*"
+config="*"
+nanovg="*"
+
+[dependencies.yoga]
+path = "ext/yoga-rs"
+
+#[dependencies.nanovg]
+#path = "../ext/nanovg-rs"
+
