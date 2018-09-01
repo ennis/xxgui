@@ -1,0 +1,163 @@
+
+$primary: #151515;
+$accent: #fffefc;
+$secondary: #ffe15c;
+
+$highlight-background: $accent;
+$highlight-text: $accent;
+$accent-1: #be0500;
+$text: #000000;
+$text-disabled: #000000;
+// panel header color
+$panel-header: $secondary;
+$panel-header-alt: $secondary;
+// default background of panels
+$panel-background: $primary;
+$panel-background-alt: $primary;
+$panel-border: #3e3e3e;
+// the void
+$canvas-background: #000000;
+// hovered element background (menu item, etc)
+$hover-background: #ddedeb;
+// hovered text
+$hover-text: invert($hover-background);
+// background of button items
+$button-background: #474747;
+// background of editable elements
+$edit-background: $button-background;
+
+vbox {
+    flex-direction: column;
+    margin: 2px;
+    border-width: 1px;
+}
+
+hbox {
+    flex-direction: row;
+    margin: 2px;
+}
+
+dummy
+{
+    background-color: #f5e725;
+    border-width: 1px;
+    //border-radius: 8px;
+    border-color: #91891f;
+    margin: 3px;
+    box-shadow: 2px 2px 0px 0px #fcff83 inset;
+}
+
+slider {
+    flex-grow: 1.0;
+    height: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2px 4px 2px;
+}
+
+slider-bar {
+    flex-direction: row;
+    align-items: center;
+    height: 5px;
+    background-color: lighten($primary, 20);
+}
+
+slider-knob {
+    flex-direction: row;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: $accent;
+}
+
+button {
+    background-color: $button-background;
+    border-width: 2px;
+    width: 100px;
+    height: 24px;
+    border-color: #848484;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+button:hover {
+
+}
+
+scroll {
+    flex-direction: column;
+    flex-grow: 1.0;
+    align-items: stretch;
+    padding: 3px;
+    background-color: $panel-background;
+    border-width: 3px;
+}
+
+collapsing {
+    flex-direction: column;
+    flex-grow: 1.0;
+    align-self: flex-start;
+    margin: 2px;
+}
+
+collapsing-header {
+    background-color: $panel-header;
+    padding: 4px;
+}
+
+collapsing-contents {
+    padding: 4px;
+    border-color: $panel-header;
+    border-width: 1px;
+    //border-radius: 2px;
+}
+
+floating {
+    flex-direction: column;
+    flex-grow: 1.0;
+    align-self: flex-start;
+
+    margin: 2px;
+    border-width: 4px;
+    padding: 2px;
+    border-radius: 8px;
+    border-color: darken($secondary, 20);
+    position: absolute;
+
+    background-color: $panel-background;
+
+    width: 400px;
+    height: 400px;
+}
+
+floating-panel-close-button {
+    //border-color: $panel-border;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: $accent-1;
+    width: 18px;
+    height: 18px;
+}
+
+floating-header {
+    //border-color: $panel-border;
+    background-color: darken($secondary, 20);
+    //border-radius: 5px;
+    padding: 3px;
+    height: 24px;
+}
+
+floating-contents {
+    padding: 6px;
+}
+
+floating-resize-handle {
+    background-color: $accent;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}

@@ -1,0 +1,108 @@
+vbox {
+  flex-direction: column;
+  margin: 2px;
+  border-width: 1px; }
+
+hbox {
+  flex-direction: row;
+  margin: 2px; }
+
+dummy {
+  background-color: #f5e725;
+  border-width: 1px;
+  border-color: #91891f;
+  margin: 3px;
+  box-shadow: 2px 2px 0px 0px #fcff83 inset; }
+
+slider {
+  flex-grow: 1.0;
+  height: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2px 4px 2px; }
+
+slider-bar {
+  flex-direction: row;
+  align-items: center;
+  height: 5px;
+  background-color: #484848; }
+
+slider-knob {
+  flex-direction: row;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #fffefc; }
+
+button {
+  background-color: #474747;
+  border-width: 2px;
+  width: 100px;
+  height: 24px;
+  border-color: #848484;
+  padding: 4px;
+  border-radius: 2px; }
+
+scroll {
+  flex-direction: column;
+  flex-grow: 1.0;
+  align-items: stretch;
+  padding: 3px;
+  background-color: #151515;
+  border-width: 3px; }
+
+collapsing {
+  flex-direction: column;
+  flex-grow: 1.0;
+  align-self: flex-start;
+  margin: 2px; }
+
+collapsing-header {
+  background-color: #ffe15c;
+  padding: 4px; }
+
+collapsing-contents {
+  padding: 4px;
+  border-color: #ffe15c;
+  border-width: 1px; }
+
+floating {
+  flex-direction: column;
+  flex-grow: 1.0;
+  align-self: flex-start;
+  margin: 2px;
+  border-width: 4px;
+  padding: 2px;
+  border-radius: 8px;
+  border-color: #f5c800;
+  position: absolute;
+  background-color: #151515;
+  width: 400px;
+  height: 400px; }
+
+floating-panel-close-button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background-color: #be0500;
+  width: 18px;
+  height: 18px; }
+
+floating-header {
+  background-color: #f5c800;
+  padding: 3px;
+  height: 24px; }
+
+floating-contents {
+  padding: 6px; }
+
+floating-resize-handle {
+  background-color: #fffefc;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px; }
+
+/*# sourceMappingURL=default.css.map */
